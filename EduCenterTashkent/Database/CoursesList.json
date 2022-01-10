@@ -1,0 +1,30 @@
+[
+  {
+    "NameOfCourse": "Foundation",
+    "DeadLine": "5 oy",
+    "Teacher": "Alisher Kasimov",
+    "Price": "5.000.000 so'm'"
+  },
+
+  {
+    "NameOfCourse": ".net",
+    "DeadLine": "7 oy + 1 oy amaliyot",
+    "Teacher": "Muhammadkarim To'xtaboyev'",
+    "Price": "16.900.000 so'm"
+  },
+
+  {
+    "NameOfCourse": "SMM",
+    "DeadLine": "5 oy",
+    "Teacher": "Javohir Mamosoliyev",
+    "Price": "8.000.000 so'm"
+  },
+
+  {
+    "NameOfCourse": "Fronted",
+    "DeadLine": "6 oy",
+    "Teacher": "Farrux Atadjonov",
+    "Price": "12.000.000 so'm"
+  }
+
+]
