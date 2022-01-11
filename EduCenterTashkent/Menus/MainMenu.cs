@@ -526,7 +526,6 @@ namespace EduCenterTashkent.Menus
                     Console.ForegroundColor = ConsoleColor.DarkYellow;
                     Media.SystemExit();
                     Console.Write("\n\t\t\t\t\t\t\t\t      System exit");
-                    //Thread.Sleep(1000);
                     for (int i = 0; i < 3; i++)
                     {
                         Thread.Sleep(500);

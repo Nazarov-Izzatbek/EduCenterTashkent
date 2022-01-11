@@ -33,6 +33,7 @@ namespace EduCenterTashkent.Repositories
                     File.WriteAllText(Constants.SuccesLogInTime, $"{File.ReadAllText(Constants.SuccesLogInTime)}| {admin.FirstName} {admin.LastName}");
 
                     Thread.Sleep(1500); Console.Clear();
+                    Media.EnterMainMenu();
                     MainMenu.MainMenuProgram();
                 }
                 else

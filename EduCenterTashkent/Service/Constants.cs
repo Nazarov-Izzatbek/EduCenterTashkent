@@ -19,6 +19,7 @@ namespace EduCenterTashkent.Service
         public static readonly string ErorLogInSound2 = @"E:\1zzat\1 Najot Ta'lim\IT\Imtihon\Bootcamp\C# Exam\EdeCentTashWithAdmin\EduCenterTashkent\EduCenterTashkent\Media\LogIn error.wav";
         public static readonly string SuccesLogIn = @"E:\1zzat\1 Najot Ta'lim\IT\Imtihon\Bootcamp\C# Exam\EdeCentTashWithAdmin\EduCenterTashkent\EduCenterTashkent\Media\Succesful LogIn.wav";
         public static readonly string SystemExit = @"E:\1zzat\1 Najot Ta'lim\IT\Imtihon\Bootcamp\C# Exam\EdeCentTashWithAdmin\EduCenterTashkent\EduCenterTashkent\Media\System Exit.wav";
+        public static readonly string MainMenu = @"E:\1zzat\1 Najot Ta'lim\IT\Imtihon\Bootcamp\C# Exam\EdeCentTashWithAdmin\EduCenterTashkent\EduCenterTashkent\Media\Main Menu.wav";
 
 
 

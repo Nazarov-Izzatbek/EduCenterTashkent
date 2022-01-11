@@ -1,11 +1,7 @@
 ﻿using EduCenterTashkent.Service;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Media;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace EduCenterTashkentWithAdmin.Media
 {
@@ -177,8 +173,8 @@ namespace EduCenterTashkentWithAdmin.Media
         {
             if (OperatingSystem.IsWindows())
             {
-                Thread.Sleep(800);
-                SoundPlayer systemExit = new SoundPlayer(Constants.SystemExit);
+                Thread.Sleep(100);
+                SoundPlayer systemExit = new SoundPlayer(Constants.MainMenu);
                 systemExit.Load();
                 systemExit.Play();
             }
