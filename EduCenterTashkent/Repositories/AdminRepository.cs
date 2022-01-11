@@ -147,7 +147,7 @@ namespace EduCenterTashkent.Repositories
         public static void IsInDatabase(Admins admin)
         {
 
-            string json = File.ReadAllText(Constants.StudentDbPath);
+            string json = File.ReadAllText(Constants.AdminsDB);
             IList<Admins> admins = JsonConvert.DeserializeObject<IList<Admins>>(json);
 
             var studentcollect = admins.Where(p => p.FirstName == admin.FirstName && p.LastName == admin.LastName && p.PhoneNum == admin.PhoneNum).ToList();

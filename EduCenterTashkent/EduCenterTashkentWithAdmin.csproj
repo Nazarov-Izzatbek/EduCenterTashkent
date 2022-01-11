@@ -10,6 +10,7 @@
     <PackageReference Include="InputSimulator" Version="1.0.4" />
     <PackageReference Include="Intercom.Dotnet.Client" Version="2.1.1" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.Windows.Extensions" Version="6.0.0" />
   </ItemGroup>
 
 </Project>

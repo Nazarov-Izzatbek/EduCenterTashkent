@@ -2,6 +2,7 @@
 using EduCenterTashkent.Menus;
 using EduCenterTashkent.Models;
 using EduCenterTashkent.Service;
+using EduCenterTashkentWithAdmin.Media;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -23,6 +24,7 @@ namespace EduCenterTashkent.Repositories
                 if (admin.UserName == userName && admin.Password == password)
                 {
                     Console.ForegroundColor = ConsoleColor.DarkGreen;
+                    Media.SuccesfulLogIn();
                     Console.WriteLine("\n\n\t\t\t\t\t\t\t\t   Successfully logged in!");
                     Console.ForegroundColor = ConsoleColor.DarkCyan;
 
@@ -40,9 +42,13 @@ namespace EduCenterTashkent.Repositories
                 if (errorsCount == admins.Count)
                 {
                     Console.ForegroundColor = ConsoleColor.DarkRed;
+                    
                     Console.WriteLine("\n\n\t\t\t\t\t\t\t   There is an error in LogIn or Password!\n\t\t\t\t\t\t\t\t      Re-Enter please!");
+                    Media.ErrorLogIn1();
+                    Thread.Sleep(5000);
+                    Media.ErrorLogIn2();
                     Console.ForegroundColor = ConsoleColor.DarkCyan;
-                    Thread.Sleep(3000); Console.Clear();
+                    Thread.Sleep(4000); Console.Clear();
                     StarterMenu.IntroductionWindow();
                 }
             }

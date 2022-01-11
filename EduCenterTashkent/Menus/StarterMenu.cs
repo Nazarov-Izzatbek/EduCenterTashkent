@@ -1,5 +1,6 @@
 ﻿using EduCenterTashkent.Repositories;
 using EduCenterTashkent.Service;
+using EduCenterTashkentWithAdmin.Media;
 using System;
 using System.IO;
 using System.Threading;
@@ -37,6 +38,7 @@ namespace EduCenterTashkent.Menus
                     "\t\t\t\t         ░░░╚═╝░░░ ╚═╝░░╚═╝ ╚═════╝░ ╚═╝░░╚═╝ ╚═╝░░╚═╝ ╚══════╝ ╚═╝░░╚══╝ ░░░╚═╝░░░\n" +
 
                     $"\n\t\t\t\t\t\t\tTime the system was started: {sys}");
+            
             LogInOrExit();
 
         }
@@ -70,6 +72,7 @@ namespace EduCenterTashkent.Menus
                 else if (choice == 2)
                 {
                     Console.ForegroundColor = ConsoleColor.DarkYellow;
+                    Media.SystemExit();
                     Console.Write("\n\t\t\t\t\t\t\t\t\tSystem exit");
                     for (int i = 0; i < 3; i++)
                     {

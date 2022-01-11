@@ -1,6 +1,7 @@
 ﻿using EduCenterTashkent.Models;
 using EduCenterTashkent.Repositories;
 using EduCenterTashkent.Service;
+using EduCenterTashkentWithAdmin.Media;
 using System;
 using System.IO;
 using System.Threading;
@@ -523,6 +524,7 @@ namespace EduCenterTashkent.Menus
                 else if (choice == 4)
                 {
                     Console.ForegroundColor = ConsoleColor.DarkYellow;
+                    Media.SystemExit();
                     Console.Write("\n\t\t\t\t\t\t\t\t      System exit");
                     //Thread.Sleep(1000);
                     for (int i = 0; i < 3; i++)
@@ -576,7 +578,7 @@ namespace EduCenterTashkent.Menus
                   ██╔══██║ ██║░░██║ ██║╚██╔╝██║ ██║ ██║╚████║ ██║ ░╚═══██╗ ░░░██║░░░ ██╔══██╗ ██╔══██║ ░░░██║░░░ ██║ ██║░░██║ ██║╚████║
                   ██║░░██║ ██████╔╝ ██║░╚═╝░██║ ██║ ██║░╚███║ ██║ ██████╔╝ ░░░██║░░░ ██║░░██║ ██║░░██║ ░░░██║░░░ ██║ ╚█████╔╝ ██║░╚███║
                   ╚═╝░░╚═╝ ╚═════╝░ ╚═╝░░░░░╚═╝ ╚═╝ ╚═╝░░╚══╝ ╚═╝ ╚═════╝ ░░░░╚═╝░░░ ╚═╝░░╚═╝ ╚═╝░░╚═╝ ░░░╚═╝░░░ ╚═╝ ░╚════╝░ ╚═╝░░╚══╝");
-            string receptionMenu = "| 1) Add Admin | 2) Delete admin | 3) Update admin | 5) Go back |";
+            string receptionMenu = "| 1) Add Admin | 2) Delete admin | 3) Update admin | 4) Go back |";
             Console.Write("\n\n\t\t\t\t        ");
             for (int i = 0; i < receptionMenu.Length; i++) Console.Write("-"); Console.Write("\n");
             Console.WriteLine($"\t\t\t\t        {receptionMenu}");
@@ -875,7 +877,7 @@ namespace EduCenterTashkent.Menus
 
                 #region Go back |   Done
 
-                else if (adminChoice == 5)
+                else if (adminChoice == 4)
                 {
                     Console.Clear();
                     MainMenu.MainMenuProgram();

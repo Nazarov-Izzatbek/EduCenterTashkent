@@ -6,5 +6,12 @@
     "PhoneNum": "+998977777777",
     "UserName": "admin",
     "Password": "admin"
+  },
+  {
+    "FirstName": "John",
+    "LastName": "Doe",
+    "PhoneNum": "+998907007070",
+    "UserName": "J.Doe",
+    "Password": "qwerty"
   }
 ]
